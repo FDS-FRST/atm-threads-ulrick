@@ -12,8 +12,6 @@ public class Main {
         System.out.println("Solde final: " + account.getBalance() + " Gourdes");
 
         System.out.println("\n=== Race Condition ===");
-        System.out.println("Solde initial: " + account.getBalance() + " Gourdes");
-
 
         Thread client1 = new Thread(new ATMTask(account, Operation.WITHDRAW, 700.0, "Mike"));
         Thread client2 = new Thread(new ATMTask(account, Operation.WITHDRAW, 700.0, "Dually"));

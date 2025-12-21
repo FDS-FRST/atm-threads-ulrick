@@ -5,10 +5,10 @@ enum Operation {
 }
 
 class ATMTask implements Runnable {
-    private BankAccount account;
-    private Operation operation;
-    private double amount;
-    private String clientName;
+    private final BankAccount account;
+    private final Operation operation;
+    private final double amount;
+    private final String clientName;
 
     public ATMTask(BankAccount account, Operation operation, double amount, String clientName) {
         this.account = account;
