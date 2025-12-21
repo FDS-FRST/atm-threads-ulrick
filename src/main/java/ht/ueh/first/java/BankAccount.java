@@ -18,7 +18,7 @@ class BankAccount {
     }
 
 
-    public void withdraw(double amount) {
+    public synchronized void withdraw(double amount) {
         if (amount <= 0) {
             throw new InvalidAmountException("Montant invalide: " + amount + ". Le montant doit être > 0");
         }
