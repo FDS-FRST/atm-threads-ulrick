@@ -5,7 +5,7 @@ public class Main {
         BankAccount account = new BankAccount(12345, 1000.0);
 
         System.out.println("\nRÉPONSES des question posées dans le TP");
-        System.out.println("sont COMMENTER dans le fichier main.java\n");
+        System.out.println("sont COMMENTÉES dans le fichier main.java\n");
         // Opérations
         account.deposit(200.0);
         account.withdraw(150.0);
@@ -85,6 +85,6 @@ public class Main {
         System.out.println("\nSolde final: " + account.getBalance() + " Gourdes\n");
 
         System.out.println("RÉPONSES des question posées dans le TP");
-        System.out.println("sont COMMENTER dans le fichier main.java");
+        System.out.println("sont COMMENTÉES dans le fichier main.java");
     }
 }
